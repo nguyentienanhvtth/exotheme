@@ -73,7 +73,10 @@ img {
       background-position: center center; }
   #slider_header .slider .auto-play-slider.owl-carousel .item .content {
     margin: 0 auto;
-    max-width: 1170px;
+    width: 1170px;
+    left: 50%;
+    margin-left: -585px;
+    position: absolute;
     margin-top: 220px;
     top: 50px;
     z-index: 60;
@@ -121,10 +124,10 @@ img {
     position: absolute;
     left: 50%;
     margin-left: -40px; }
-  #slider_header .slider .auto-play-slider.owl-carousel .item .container .tleft {
+  #slider_header .slider .auto-play-slider.owl-carousel .item .tleft {
     text-align: left;
     margin-top: 50px; }
-  #slider_header .slider .auto-play-slider.owl-carousel .item .container .center {
+  #slider_header .slider .auto-play-slider.owl-carousel .item .center {
     text-align: center; }
   #slider_header .slider .auto-play-slider.owl-carousel:hover .owl-nav {
     display: block;

@@ -47,7 +47,10 @@
                 }
                 .content{
                     margin:0 auto;
-                    max-width: 1170px;
+                    width: 1170px;
+                    left: 50%;
+                    margin-left: -585px;
+                    position: absolute;
                     margin-top: 220px;
                     top: 50px;
                     z-index: 60;
@@ -96,14 +99,12 @@
                     left: 50%;
                     margin-left: -40px;
                 }
-                .container{
-                    .tleft{
-                        text-align: left;
-                        margin-top: 50px;
-                    }
-                    .center{
-                        text-align: center;
-                    }
+                .tleft{
+                    text-align: left;
+                    margin-top: 50px;
+                }
+                .center{
+                    text-align: center;
                 }
             }
         }
