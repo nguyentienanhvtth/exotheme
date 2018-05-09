@@ -30,12 +30,8 @@ img {
   border: none; }
 
 .container {
-<<<<<<< HEAD
-  margin: 0px auto; }
-=======
   margin: 0px auto;
   max-width: 1170px; }
->>>>>>> e5eee84ca294a8b8cf5b926b43bac4af012dbcc8
 
 .fleft, .float-left {
   float: left; }
@@ -47,7 +43,6 @@ img {
   clear: both; }
 
 /* ------ Normalize ----- */
-<<<<<<< HEAD
 #content {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -307,31 +302,33 @@ img {
       #content .slide-content .slide-content__colright img {
         position: absolute;
         top: -127px; }
-=======
+
 #slider_header {
   font-family: 'Lato', sans-serif; }
   #slider_header .slider .auto-play-slider.owl-carousel .owl-item {
     height: 500px; }
   #slider_header .slider .auto-play-slider.owl-carousel .owl-dots {
     display: none; }
-  #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button span {
-    font-size: 0; }
-  #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button.owl-prev span {
+  #slider_header .slider .auto-play-slider.owl-carousel .owl-nav {
     position: absolute;
     top: 50%;
-    left: 1%;
-    content: "";
-    background: url("images/large_left.png") no-repeat 0 0;
-    width: 40px;
-    height: 40px; }
-  #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button.owl-next span {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    content: "";
-    background: url("images/large_right.png") no-repeat 0 0;
-    width: 40px;
-    height: 40px; }
+    width: 100%; }
+    #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button span {
+      font-size: 0; }
+    #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button.owl-prev span {
+      position: absolute;
+      left: 1%;
+      content: "";
+      background: url("images/large_left.png") no-repeat 0 0;
+      width: 40px;
+      height: 40px; }
+    #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button.owl-next span {
+      position: absolute;
+      right: 1%;
+      content: "";
+      background: url("images/large_right.png") no-repeat 0 0;
+      width: 40px;
+      height: 40px; }
   #slider_header .slider .auto-play-slider.owl-carousel .item .img {
     width: 100%; }
     #slider_header .slider .auto-play-slider.owl-carousel .item .img img {
@@ -465,4 +462,3 @@ img {
       #header .container .row nav.menu-icon ul.list-inline li a {
         color: #D03232;
         padding: 0 8px 0 8px; }
->>>>>>> e5eee84ca294a8b8cf5b926b43bac4af012dbcc8
