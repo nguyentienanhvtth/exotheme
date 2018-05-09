@@ -1,0 +1,90 @@
+#header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    .container{
+        .row{
+            .col-sm-3{
+                width: 25%;
+                float: left;
+                line-height: 1.7em;
+            }
+            .col-sm-9{
+                width: 75%;
+                float: left;
+                line-height: 1.7em;
+            }
+            .logo{
+                text-align: center;
+                height: 80px;
+                line-height: 80px;
+                vertical-align: middle;
+                a{
+                    img{
+                        vertical-align: middle;
+                    }
+                }
+            }
+            nav.menu{
+                ul.list-inline{
+                    line-height: 80px;
+                    li{
+                        position: relative;
+                        display: inline-block;
+                        list-style:none;
+                        a{
+                            padding: 10px 16px 8px 16px;
+                            font-weight: 600;
+                            font-size: 13px;
+                            transition : .5s;
+                        }
+                        ul.menu2{
+                            padding: 0;
+                            position: absolute;
+                            width: 170px;
+                            display: none;
+                            li{
+                                width: 100%;
+                                display: block;
+                                line-height: 43px;
+                                background: #222;
+                                transition: 0.5s;
+                                a{
+                                    font-size: 14px;
+                                    letter-spacing: normal;
+                                    font-weight: 800;
+                                }
+                            }
+                            li:hover{
+                                background: #D03232;
+                            }
+                        }
+                    }
+                    li:hover{
+                        ul.menu2{
+                            display: block;
+                        }
+                        a.hover{
+                            color: #D03232;
+                        }
+                    }
+                }
+            }
+            nav.menu-icon{
+                line-height: 80px;
+                ul.list-inline{
+                    li{
+                        display: inline-block;
+                        list-style:none;
+                        a{
+                            color: #D03232 ;
+                            padding: 0 8px 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

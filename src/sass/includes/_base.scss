@@ -18,6 +18,9 @@ html, body{
 
 .list-inline li{
     @include dis(middle);
+    a{
+      text-decoration: none;
+    }
 }
 
 a{
@@ -32,7 +35,11 @@ img{
 
 .container{
   margin: 0px auto;
+<<<<<<< HEAD
   // width: 960px;
+=======
+  max-width: 1170px;
+>>>>>>> e5eee84ca294a8b8cf5b926b43bac4af012dbcc8
 }
 
 .fleft ,.float-left {
