@@ -9,3 +9,9 @@ jQuery(document).ready(function(){
 	    animateOut: 'fadeOut'
 	});
 });
+
+jQuery(document).ready(function(){
+  $(window).on('load', function () {
+		$('.ma5slider').ma5slider();
+ });
+});
