@@ -10,6 +10,9 @@
                 display: none;
             }
             .owl-nav{
+                position: absolute;
+                top: 50%;
+                width: 100%;
                 button{
                     span{
                         font-size: 0;
@@ -18,7 +21,6 @@
                 button.owl-prev{
                     span{
                         position: absolute;
-                        top: 50%;
                         left: 1%;
                         content: "";
                         background: url("images/large_left.png") no-repeat 0 0;
@@ -29,8 +31,7 @@
                 button.owl-next{
                     span{
                         position: absolute;
-                        top: 50%;
-                        right: 3%;
+                        right: 1%;
                         content: "";
                         background: url("images/large_right.png") no-repeat 0 0;
                         width: 40px;

@@ -43,6 +43,7 @@ img {
   clear: both; }
 
 /* ------ Normalize ----- */
+<<<<<<< HEAD
 #slider_header {
   font-family: 'Lato', sans-serif; }
   #slider_header .slider .auto-play-slider.owl-carousel .owl-item {
@@ -133,6 +134,8 @@ img {
     display: block;
     opacity: 1; }
 
+=======
+>>>>>>> 3c9f9f29c13c68fa84125c34e208be55040741e1
 #content {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -413,6 +416,7 @@ img {
       #content .slide-content .slide-content__colright img {
         position: absolute;
         top: -127px; }
+<<<<<<< HEAD
   #content .content-logo {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -491,6 +495,54 @@ img {
           line-height: 22px;
           margin: 0px 0px 14px; }
     #content .content-question__button {
+=======
+
+#slider_header {
+  font-family: 'Lato', sans-serif; }
+  #slider_header .slider .auto-play-slider.owl-carousel .owl-item {
+    height: 500px; }
+  #slider_header .slider .auto-play-slider.owl-carousel .owl-dots {
+    display: none; }
+  #slider_header .slider .auto-play-slider.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%; }
+    #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button span {
+      font-size: 0; }
+    #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button.owl-prev span {
+      position: absolute;
+      left: 1%;
+      content: "";
+      background: url("images/large_left.png") no-repeat 0 0;
+      width: 40px;
+      height: 40px; }
+    #slider_header .slider .auto-play-slider.owl-carousel .owl-nav button.owl-next span {
+      position: absolute;
+      right: 1%;
+      content: "";
+      background: url("images/large_right.png") no-repeat 0 0;
+      width: 40px;
+      height: 40px; }
+  #slider_header .slider .auto-play-slider.owl-carousel .item .img {
+    width: 100%; }
+    #slider_header .slider .auto-play-slider.owl-carousel .item .img img {
+      background-position: center center; }
+  #slider_header .slider .auto-play-slider.owl-carousel .item .content {
+    margin: 0 auto;
+    width: 1170px;
+    left: 50%;
+    margin-left: -585px;
+    position: absolute;
+    margin-top: 220px;
+    top: 50px;
+    z-index: 60;
+    color: #fff;
+    text-transform: uppercase; }
+    #slider_header .slider .auto-play-slider.owl-carousel .item .content h1.title {
+      font-size: 56px;
+      line-height: 17px; }
+    #slider_header .slider .auto-play-slider.owl-carousel .item .content button {
+>>>>>>> 3c9f9f29c13c68fa84125c34e208be55040741e1
       color: #fff;
       width: 100%;
       text-align: center;
