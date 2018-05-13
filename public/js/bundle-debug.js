@@ -8,4 +8,8 @@ jQuery(document).ready(function(){
 	    autoplayTimeout:5500,
 	    animateOut: 'fadeOut'
 	});
+	$("#menu-bar").click(function () {
+		// body...
+		$("#clone").find("nav.menu").slideToggle('fast');
+	});
 });
