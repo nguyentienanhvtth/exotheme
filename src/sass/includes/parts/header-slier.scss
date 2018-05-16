@@ -3,7 +3,7 @@
     .slider{
         .auto-play-slider.owl-carousel{
             .owl-item{
-                height: 500px;
+                max-height: 500px;
             }
 
             .owl-dots{
@@ -145,7 +145,7 @@
             .auto-play-slider.owl-carousel.owl-theme{
                 .item{
                     .content{
-                        margin-top: 30px;
+                        margin-top: 60px!important;
                         h1{
                             font-size: 18px;
                             line-height: 6px;
@@ -161,6 +161,25 @@
                             .inner-content:before{
                                 margin-top: -25px;
                             }
+                        }
+                        &.tleft{
+                            margin-top: 20px!important;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    section#slider_header{
+        .slider{
+            .auto-play-slider.owl-carousel.owl-theme{
+                .item{
+                    .content{
+                        &.tleft{
+                            margin-top: 10px!important;
                         }
                     }
                 }
