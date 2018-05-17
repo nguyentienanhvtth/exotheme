@@ -652,7 +652,7 @@ img {
     box-sizing: border-box;
     padding: 0px 30px; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) and (min-width: 500px) {
   .container {
     width: 90%; }
   #content .content-intro__box {
@@ -689,6 +689,58 @@ img {
       margin: 30px 0px; }
       #content .content-contact .contact-button a {
         margin-left: 0px; } }
+
+@media only screen and (max-width: 499px) and (min-width: 300px) {
+  .container {
+    width: 97%; }
+  #content .content-intro__box {
+    display: block;
+    width: 100%; }
+  #content .service-gallery .container .service-gallery__item {
+    width: 100%; }
+  #content .service-descrip .service-descrip__box {
+    width: 100%; }
+  #content .slide-content .slide-content__colright {
+    display: none; }
+  #content .slide-content .slide-content__colleft {
+    width: 100%; }
+    #content .slide-content .slide-content__colleft .ma5slider .slides .owl-item {
+      margin: 50px 25px;
+      text-align: justify; }
+      #content .slide-content .slide-content__colleft .ma5slider .slides .owl-item p {
+        margin: -10px 0px 25px; }
+  #content .content-logo .logo-row {
+    width: 90%;
+    margin: 0 auto; }
+    #content .content-logo .logo-row .content-logo__item {
+      width: 32.33%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0px 15px; }
+  #content .content-question__box .question-box__col50 {
+    width: 100%; }
+    #content .content-question__box .question-box__col50 .question {
+      line-height: 25px; }
+  #content .content-contact {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 20px; }
+    #content .content-contact p {
+      width: 100%; }
+    #content .content-contact .contact-button {
+      width: 100%;
+      margin: 30px 0px; }
+      #content .content-contact .contact-button a {
+        margin-left: 0px; }
+  #content .track-it .container .insert-track input[type=text] {
+    width: 60%; }
+  #content .track-it .container .insert-track input[type=button] {
+    font-size: 18px;
+    padding: 16px 7px;
+    width: 40%;
+    left: 60%; } }
 
 #header {
   position: absolute;
