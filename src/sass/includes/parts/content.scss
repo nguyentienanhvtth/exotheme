@@ -2,7 +2,7 @@
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   line-height: 1.7;
-  position: relative;
+  // position: relative;
   .container{
     width: 1140px;
     margin:0 auto;
@@ -19,6 +19,7 @@
           width: 33.33%;
           box-sizing: border-box;
           padding: 60px;
+          height: 100%;
             .text-box{
               h2{
                 font-size: 26px;
@@ -26,12 +27,21 @@
                 text-transform: uppercase;
                 font-family: 'Montserrat', sans-serif;
                 margin:0px ;
+                height: 64px;
+                line-height: 64px;
+                vertical-align: middle;
+                span{
+                  line-height: normal;
+                  display: inline-block;
+                  
+                }
               }
               h2.wow,.fadeIn{
                 visibility:visible;
                 animation-delay:0.2s;
                 animation-name:fadeIn;
               }
+            
               p{
                 margin:0px 0px 40px;
               }
@@ -147,6 +157,7 @@
             .descrip__box--colleft{
               width: 15%;
               box-sizing: border-box;
+              float: left;
                 img{
                   width: 50px;
                  
@@ -154,6 +165,7 @@
             }
             .descrip__box--colright{
               width: 85%;
+              float: left;
                 .box--colright-title{
                   h3{
                     font-size: 20px;
@@ -181,6 +193,7 @@
       background: #eee;
       box-sizing: border-box;
       padding: 60px 0px;
+      max-width: 100%;
         &__item{
           box-sizing: border-box;
           padding: 0px 3px;
@@ -244,9 +257,12 @@
         }
     .slide-content{        
       background: #D03232;
+      // height: 415px;
       .slide-content__colleft{
         width: 50%;
         box-sizing: border-box;
+        height: 415px;
+        overflow: hidden;
           .ma5slider .navs-wrapper{
             height: 333px;
             
@@ -333,7 +349,7 @@
       }
     }
     .content-question{
-      max-width: 100%;
+      width: 100%;
       background: url('images/bg1.jpg');
       box-sizing: border-box;
       padding: 60px 0px;
@@ -461,10 +477,22 @@
       padding: 16px;
       background: #eee;
       border-radius: 35px;
-      opacity: 0.7;
+      opacity: 0;
+      // display: none;
+      transition: all 1s;
       &:hover{
         opacity: 1;
+        
+      }
+      &.active{
+        opacity: 0.7;
       }
     }
    }
   
+  //  @media only screen and (max-width: 1145px){
+  //    .container{
+  //      width:90%;
+  //      margin: 0 auto;
+  //    }
+  //  }

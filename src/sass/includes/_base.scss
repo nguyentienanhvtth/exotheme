@@ -48,7 +48,9 @@ img{
 .clear-fix, .clearfix{
   clear: both;
 }
-
+#wrapper{
+  max-width: 100%;
+}
 
 
 /* ------ Normalize ----- */

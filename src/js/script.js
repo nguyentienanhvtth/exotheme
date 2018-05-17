@@ -20,10 +20,10 @@ $(document).ready(function(){
 
 	//Check to see if the window is top if not then display button
 		$(window).scroll(function(){
-			if ($(this).scrollTop() > 400) {
-					$('.button-scroll').fadeIn();
+			if ($(this).scrollTop() > 350) {
+					$('.button-scroll').addClass('active');
 			} else {
-					$('.button-scroll').fadeOut();
+					$('.button-scroll').removeClass('active');
 			}
 	});
 
