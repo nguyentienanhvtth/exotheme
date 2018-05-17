@@ -3,7 +3,7 @@
     .slider{
         .auto-play-slider.owl-carousel{
             .owl-item{
-                height: 500px;
+                max-height: 500px;
             }
 
             .owl-dots{
@@ -20,6 +20,7 @@
                 }
                 button.owl-prev{
                     span{
+                        margin-top: -30px;
                         position: absolute;
                         left: 1%;
                         content: "";
@@ -30,6 +31,7 @@
                 }
                 button.owl-next{
                     span{
+                        margin-top: -30px;
                         position: absolute;
                         right: 1%;
                         content: "";
@@ -40,30 +42,44 @@
                 }
             }
             .item{
+               // height: 100%;
                 .img{
                     width: 100%;
+                    //height: 100%;
                     img{
                         background-position: center center;
+                        //height: 100%;
                     }
                 }
                 .content{
-                    margin:0 auto;
-                    width: 1170px;
-                    left: 50%;
-                    margin-left: -585px;
+                    left: 0;
+                    top:0;
+                    right: 0;
+                    bottom: 0;
                     position: absolute;
-                    margin-top: 220px;
-                    top: 50px;
+                    margin-top: 200px;
                     z-index: 60;
                     color: #fff;
                     text-transform: uppercase;
+                    .inner-content{
+                        position: relative;
+                        max-width: 1170px;
+                        margin: auto;
+                        &:before{
+                            content: "";
+                            height: 3px;
+                            width: 80px;
+                            display: block;
+                            background: #D03232;
+                        }
+                    }
                     h1.title{
                         font-size: 56px;
                         line-height: 17px;
                     }
                     button{
                         color: #fff;
-                        margin-top: 10px;
+                        margin-top: 30px;
                         padding: 6px 31px 6px 31px;
                         border-radius: 5px;
                         font-size: 13px;
@@ -76,10 +92,11 @@
                         background: #D03232;
                         border: 2px solid transparent;
                         transition: .5s;
+
                     }
                     button.read{
                         background: transparent;
-                        border: 2px solid white;
+                        border: 2px solid rgba(255,255,255,.5);
                         transition: .5s;
                     }
                     button.buy:hover, button.read:hover{
@@ -87,22 +104,24 @@
                         color: #333;
                         border: 2px solid transparent;
                     }
+                    a{
+                        text-decoration: none;
+                    }
                 }
-                .content:before{
-                    content: "";
-                    height: 3px;
-                    width: 80px;
-                    display: block;
-                    background: #D03232;
-                }
-                .content.center:before{
-                    position: absolute;
-                    left: 50%;
-                    margin-left: -40px;
+                .content.center{
+                    .inner-content{
+                        &:before{
+                            margin-top: -50px; 
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -40px;
+                        }
+                    }
                 }
                 .tleft{
                     text-align: left;
-                    margin-top: 50px;
+                    margin-top: 70px;
+                    margin-left: 25px;
                 }
                 .center{
                     text-align: center;
@@ -114,6 +133,122 @@
                 display: block;
                 opacity: 1;
             }
+        }
+    }
+}
+//responsive
+
+
+@media screen and (max-width: 425px) {
+    section#slider_header{
+        .slider{
+            .auto-play-slider.owl-carousel.owl-theme{
+                .item{
+                    .content{
+                        margin-top: 60px!important;
+                        h1{
+                            font-size: 18px;
+                            line-height: 6px;
+                        }
+                        p{
+                            font-size: 9px;
+                        }
+                        button{
+                            margin-top: 0px;
+                        }
+                        &.center{
+                            margin-top: 0px;
+                            .inner-content:before{
+                                margin-top: -25px;
+                            }
+                        }
+                        &.tleft{
+                            margin-top: 20px!important;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    section#slider_header{
+        .slider{
+            .auto-play-slider.owl-carousel.owl-theme{
+                .item{
+                    .content{
+                        &.tleft{
+                            margin-top: 10px!important;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    section#slider_header{
+        .slider{
+            .auto-play-slider.owl-carousel.owl-theme{
+                .item{
+                    .content{
+                        h1{
+                            font-size: 37px;
+                            line-height: 15px;
+                        }
+                        p{
+                            font-size: 13px;
+                        }
+                        button{
+                            margin-top: 20px;
+                        }
+                        &.center{
+                            margin-top: 100px;
+                            .inner-content:before{
+                                margin-top: -25px;
+                            }
+                        }
+                        &.tleft{
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    section#slider_header{
+        .slider{
+            .auto-play-slider.owl-carousel.owl-theme{
+                .item{
+                    .content{
+                        h1{
+                            font-size: 26px;
+                            line-height: 11px;
+                        }
+                        p{
+                            font-size: 11px;
+                        }
+                        button{
+                            margin-top: 0px;
+                        }
+                        &.center{
+                            margin-top: 100px;
+                            .inner-content:before{
+                                margin-top: -25px;
+                            }
+                        }
+                        &.tleft{
+                            margin-top: 60px;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
