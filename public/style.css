@@ -674,7 +674,21 @@ img {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      padding: 0px 15px; } }
+      padding: 0px 15px; }
+  #content .content-question__box .question-box__col50 {
+    width: 100%; }
+  #content .content-contact {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px 80px; }
+    #content .content-contact p {
+      width: 100%; }
+    #content .content-contact .contact-button {
+      width: 100%;
+      margin: 30px 0px; }
+      #content .content-contact .contact-button a {
+        margin-left: 0px; } }
 
 #header {
   position: absolute;
